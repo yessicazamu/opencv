@@ -13,7 +13,7 @@ def pixelVal(pix, r1, s1, r2, s2):  #transformación del contraste
         return ((255 - s2)/(255 - r2)) * (pix - r2) + s2 #aumenta la intensidad de una imagen
    
 img = cv2.imread('agua.jpg') 
-#cv2.putText(img,"disminuye la intensidad de los píxeles oscuros y aumenta la intensidad de los píxeles claros",(100,100), font, 1, (200,0,0), 3, cv2.LINE_AA)
+cv2.putText(img,"disminuye la intensidad de los píxeles oscuros y aumenta la intensidad de los píxeles claros",(100,100), font, 1, (200,0,0), 3, cv2.LINE_AA)
   
 #Los valores no pueden valer 0
 r1 = 70
