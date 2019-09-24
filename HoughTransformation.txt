@@ -1,0 +1,23 @@
+1- Mirar video:
+	https://www.youtube.com/watch?v=4zHbI-fFIlI
+
+
+2- Leer tutorial de openCV.
+
+3- Una vez comprendida la transformación de Hough, analizar el código de openCV.
+	3.1 - ¿Qué almacenan las variables img, gray y edges?
+	img almacenamos la imagen original 
+	gray convertimos la imagen a gris 
+	edges a la imagen se le da un cambio quitandole el ruido y solo marcando los bordes 
+	3.2 - ¿Qué parámetros recibe la función cv2.HoughLines()?
+	La imagen ya sin ruido, en cuanto se dividira el pixel, y los grados que tiene la imagen,color que quiero(limite)
+	3.3 - ¿Qué está haciendo el ciclo 'for'?
+	obteniendo las lineas para esos parametros que es P y el grado de esa linea que el teta 
+	para esta parte se obtienen el seno y el coseno
+	a y b son los puntos de la linea que encontraremos de donde inicia y termina en esa parte tambien buscamos los puntos
+	en donde se ubicara nuestra linea recta 
+	y entonces dibujas lineas sobre la imagen 
+
+En la siguiente liga se encuentra el tutorial y la función de openCV:
+
+https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html
